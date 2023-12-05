@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.0.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -19,7 +19,8 @@
     "size": "size-limit",
     "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "deploy-patch": "npm version patch && npm publish --access=public"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -35,7 +36,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "react-assets",
+  "name": "@ibrunoss/react-assets",
   "author": "Bruno Silva Santana",
   "module": "dist/react-assets.esm.js",
   "size-limit": [
